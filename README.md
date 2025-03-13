@@ -1,4 +1,4 @@
-# Job Listing Platform - Frontend
+    # Job Listing Platform - Frontend
 
 ## Overview
 This is the frontend application for the Job Listing Platform. It provides a user interface for browsing and managing job listings.

@@ -42,7 +42,7 @@ const JobCard = ({ job, isBookmarked, onBookmark, onApply }) => {
     }
   }
   return (
-    <Card sx={{ mb: 2, overflow: 'visible' }}>
+    <Card sx={{ mb: 2, overflow: 'visible',boxShadow: '0px  0px 5px rgb(255, 77, 79)' }}>
       <CardContent >
         <Grid container spacing={2}  >
           <Grid item xs={12} sm={8}>

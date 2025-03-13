@@ -124,7 +124,7 @@ const Header = () => {
   
   return (
     <>
-      <AppBar position="static" color="default" elevation={1}>
+      <AppBar position="static" color="default" elevation={1} sx={{backgroundColor:'rgb(255, 77, 79)', borderBottomLeftRadius: 10, borderBottomRightRadius: 10 }}>
         <Toolbar>
           {isMobile && (
             <IconButton
@@ -145,7 +145,7 @@ const Header = () => {
             sx={{
               flexGrow: 1,
               textDecoration: 'none',
-              color: 'inherit',
+              color: 'white',
               fontWeight: 'bold'
             }}
           >
@@ -157,8 +157,9 @@ const Header = () => {
               <Button
                 component={Link}
                 to="/"
-                color="inherit"
-                sx={{ mr: 2 }}
+                color="primary"
+                variant="contained"
+                sx={{ mr: 2,backgroundColor:"whtie" }}
               >
                 Browse Jobs
               </Button>
@@ -176,12 +177,12 @@ const Header = () => {
                   </Button>
                   
                   <IconButton
-                    color="inherit"
+                    color="white"
                     onClick={handleNotificationMenuOpen}
                     sx={{ mr: 2 }}
                   >
                     <Badge badgeContent={3} color="error">
-                      <Notifications />
+                      <Notifications color='white' />
                     </Badge>
                   </IconButton>
                   
@@ -205,6 +206,7 @@ const Header = () => {
                     component={Link}
                     to="/login"
                     color="inherit"
+                    borderColor="white"
                     sx={{ mr: 2 }}
                   >
                     Login
@@ -214,6 +216,7 @@ const Header = () => {
                     to="/signup"
                     variant="contained"
                     color="primary"
+                    backgroundColor="whtie"
                   >
                     Sign Up
                   </Button>

@@ -82,7 +82,7 @@ const JobFilter = ({  onClear,onFilterChange }) => {
   };
   
   return (
-    <Paper sx={{ p: 3, mb: 3 }}>
+    <Paper sx={{ p: 3, mb: 3,boxShadow: '0px  0px 7px rgb(255, 77, 79)',  }}>
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 2 }}>
         <Typography variant="h6">Search Jobs</Typography>
         <IconButton onClick={() => setExpanded(!expanded)}>
